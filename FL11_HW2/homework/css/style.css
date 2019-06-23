@@ -1,0 +1,247 @@
+@keyframes rotate {
+    0%  { opacity: 1; }
+    25% { transform: rotateY(180deg); }
+    50% { transform: translateX(0px); }
+    75% { transform: translateX(0px); }
+    100% { opacity: 1; }
+}
+
+@media screen {
+    .tm-banner-text {
+        animation: rotate 5s linear infinite 0s;
+    }
+
+    .tm-banner-text::first-letter {
+        font-size: 30px;
+        color: #76CDD7;
+    }
+
+    .box-bg:hover {
+        background-color: #76cdd7;
+    }
+
+    .box-bg:hover .tm-box-bg-title {
+        color: #fff;
+    }
+
+    .tm-main-nav {
+        box-shadow: 0px 3px 3px 0px rgba(61, 55, 61, 0.7);
+    }
+
+    .tm-content-box {
+        box-shadow: 0px 0px 2px 2px rgba(61, 55, 61, 0.7);
+    }
+
+    section {
+        position: relative;
+    }
+
+    section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 50px solid #76CDD7;
+        border-right: 50px solid transparent;
+    }
+
+    .flex-2-col {
+        display: flex;
+        align-items: center;
+    }
+
+    .tm-banner {
+        background-color: #76cdd7;
+    }
+
+    .tm-banner-inner {
+        background-color: #fff;
+    }
+
+    .tm-banner-text {
+        letter-spacing: 2px;
+        word-spacing: 15px;
+        text-shadow: 0px 3px 0px #76CDD7, 0px 11px 0px #76CDD7;
+    }
+
+    .heading h2 {
+        text-align: center;
+        color: #76CDD7;
+    }
+
+    .heading ol {
+        list-style-type: lower-roman; 
+    }
+
+    .heading ol a:hover {
+        color: #ffb347;
+        text-decoration: none;
+        padding-left: 3px;
+        border-left: 3px solid;
+    }
+
+    .heading ol a:visited {
+        color: #ffb347;
+    }
+
+    .heading ol a.text::after {
+        content: 'New';
+        vertical-align: super;
+        color: red;
+        font-size: 10px;
+        font-weight: bold;
+        font-variant: no-common-ligatures proportional-nums;
+    }
+
+    .blocks .boxes .box {
+        padding: 10px;
+    }
+
+    .blocks ul.boxes li.box:nth-child(even) {
+		background-color: whitesmoke;
+	}
+
+    .box-work div p {
+        font-style: italic;
+    }
+
+    .box-work div p::first-letter {
+        font-size: 30px;
+    }
+
+    form .form-group textarea {
+        resize: none;
+        border: 2px solid #76CDD7;
+        border-radius: 5px;
+    }
+
+    form .form-group input {
+        border: 0;
+        border-bottom: 2px solid #76CDD7;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .form-control:focus {
+        color: #fff;
+        background-color: #76CDD7;
+        border-color: #76CDD7;
+        box-shadow: none;
+    }
+
+    .mandatory-field::after {
+        content: "";
+        display: block;
+        background: url(../img/email-icon.png) no-repeat;
+        background-size: contain;
+        width: 25px;
+        position: absolute;
+        height: 30px;
+        top: 5px;
+        right: 5px;
+    }
+
+    .submit-btn {
+        border-radius: 0;
+        background: 0;
+        border: 1px solid #76CDD7;
+        color: #76CDD7;
+        float: right;
+        font-size: 1.4em;
+        font-weight: 300;
+        padding: 15px 60px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #76CDD7;
+        border-color: #76CDD7;
+    }
+
+    .tm-nav-item:hover {
+        background-color: #f2f2f2;
+    }
+
+    h2 + p {
+        font-style: italic;
+        line-height: 2em;
+    }
+    
+    .tm-team-description-container > p {
+        text-indent: 1.5em;
+    }
+}
+
+@media print{
+	#about, .tm-sidebar, #contact, .img-contact-us, .tm-team-img, .boxes {
+		display: none;
+    }
+
+    .tm-main-content {
+        padding: 0;
+    }
+
+    .tm-content-box {
+        display: block;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    h2,p  {
+        margin-bottom: 5px;
+    }
+    
+    .tm-team-description-container {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #ideas {
+        display: block;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel {
+        padding: 0;
+    }
+
+    .tm-banner-inner {
+        padding: 10px 0;
+    }
+
+    .heading h2 {
+        text-align: center;
+    }
+
+    .padding-medium {
+        padding: 0;
+    }
+
+    .heading ol {
+        list-style: none;
+        width: 300px;
+        margin: auto;
+    }
+
+    .heading ol li:nth-child(even) {
+        text-align: right;
+    }
+
+    .heading ol a::first-letter {
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #76CDD7;
+    }
+
+    a {
+        display: block;
+    }
+}
